@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Objects</title>
+</head>
+<body>
+    <center>
+        <h1>Java script Object property and values finding </h1>
+    </center>
+
+    <script>
+        const computer ={
+            name : 'Hp Elite-book 840',
+            brand: 'Hp',
+            monitor :'14.5inch',
+            price : 30000,
+            quality: 'Good',
+        }
+
+        // finding object property 
+        const objectPropertyFind = Object.keys(computer);
+        console.log(objectPropertyFind);
+        
+        // finding object values 
+        const objectValuesFinding = Object.values(computer);
+        console.log(objectValuesFinding);
+
+        // change value of data 
+        computer['price'] = 35000;
+        console.log(computer['price'])
+    </script>
+</body>
+</html>
