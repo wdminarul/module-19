@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java-script-reverse-system</title>
+</head>
+<body>
+    <center>
+        <h1>Js Reverse system</h1>
+
+        <script>
+
+            // using for-loop for reverse 
+            const shimulId = 'I am a intern software developer in CRMHALL.';
+            let rev = '';
+            for(let i = 0; i < shimulId.length; i++){
+                let letter = shimulId[i];
+                rev = letter + rev;
+                // console.log(rev)
+            }
+
+            // using normal js function for reverse 
+            const senSplit = shimulId.split('')
+            console.log(senSplit);
+
+            let revSentence = senSplit.reverse().join('');
+            console.log(revSentence)
+
+
+
+
+
+
+
+        </script>
+        
+
+
+    </center>
+</body>
+</html>
