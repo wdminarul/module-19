@@ -23,13 +23,28 @@
             // console.log(college);
             // console.log(collegeUpperCase);
             // console.log(collegeLoweCase);
+
+            /*
+            1. Onek somoy case er karone condtion thik thake na tai case sentive bola hoy. ai jonno toLowerCase babohar kora hoy 
+            */
             if(subject.toLocaleLowerCase() == book.toLocaleLowerCase()){
                 console.log('Reading book of Economy')
             }
             else{
                 console.log('book are not same')
             }
+             /*
+            2. White space er karone string er khetre condition thik thake na
+             */
 
+             const district = 'Lalmonirhat';
+             const jela = '   lalmonirhat    '
+             if(district.trim() == jela.trim()){
+                console.log('This is My jela', district);
+             }
+             else{
+                console.log('jela is not same');
+             }
 
         </script>
     </center>
