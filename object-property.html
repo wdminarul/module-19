@@ -22,7 +22,7 @@
         // finding object property 
         const objectPropertyFind = Object.keys(computer);
         console.log(objectPropertyFind);
-        
+
         // finding object values 
         const objectValuesFinding = Object.values(computer);
         console.log(objectValuesFinding);
@@ -30,6 +30,36 @@
         // change value of data 
         computer['price'] = 35000;
         console.log(computer['price'])
+
+        // nested object 
+        const laptop = {
+            name: 'Elit-book',
+            brand: 'Dell',
+            price: 45700,
+            HDD : '1024GB',
+            using :{
+                home: 'For social Media',
+                office : {
+                    graphicsDesign: "graphics Design can do",
+                    webDesign: "web Design can do",
+                    digitalMarketing: "digital Marketing can do",
+                }
+            }
+        }
+
+        // finding nested object data 
+
+        usingPerpuse =laptop.using.office.digitalMarketing;
+        const lastValue= laptop.using.office;
+        lastValue["webDesign"] = "can not do this";
+
+        usingPerpuse =laptop.using.office;
+        console.log(usingPerpuse) 
+
+        // delete data from oject 
+
+        delete laptop.using.office.digitalMarketing;
+        console.log(laptop.using.office['graphicsDesign']);
     </script>
 </body>
 </html>
