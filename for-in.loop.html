@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+</head>
+<body>
+    <center>
+        <h1>Java script For in loop using an object</h1>
+
+        <script>
+            const mobile = {
+                name :'Redmi',
+                model : 'Redmi 10',
+                price : 19500,
+                brand : 'Xiaomi',
+                isNew : 'true',
+            }
+
+
+        for(const prop in mobile){
+            // console.log(prop);
+            // console.log(mobile[prop])
+            console.log(prop, ':' , mobile[prop])
+        }
+
+        
+        </script>
+
+    </center>
+</body>
+</html>

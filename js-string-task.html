@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script string task</title>
+</head>
+<body>
+    <center>
+        <h1>Java script string task</h1>
+    </center>
+
+    <script>
+
+        //Count how many times a string has the letter
+        const sentence = 'Count how many times a string has the A letter';
+
+        
+        const upperCase = sentence.toLowerCase();
+        const slicingSentece = sentence.split('a');
+        console.log(upperCase);
+        console.log(upperCase.length);
+
+        const vowel = ['a','e','i','o','u'];
+
+       console.log(vowel.includes('a'));
+    //    console.log(sentence.includes('a'))
+
+       if(sentence.includes('a') === vowel.includes('a','e','i','o','u')){
+        console.log('You are success');
+       }
+       
+    //    changes string values 
+
+    const num='Num';
+    const ph = 'PH';
+
+    num[''] = 'This is number';
+
+    console.log(num);
+
+    </script>
+</body>
+</html>
