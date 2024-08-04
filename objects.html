@@ -13,10 +13,27 @@
                 brand: 'Chinese',
                 quality: 'Good',
                 price : 50,
-                country : 'china';
+                country : 'china',
+                'using zone':{
+                    office: 'yes',
+                    playGround: 'yes',
+                    outSide: 'yes',
+                }
 
             }
 
+        // chenginge data to object 
+        bottle['country'] = 'bangladesh';
+        // finding object data from object tree way 
+        // 1. Using dot natition 
+        console.log(bottle.brand)
+        // 2. using [] for finding data from object 
+        console.log(bottle['country'])
+
+        // 3. using [] for finding obejct in object data 
+        const usingData = bottle['using zone'];
+
+        console.log(usingData['office'])
         </script>
 
 
